@@ -18,10 +18,10 @@ package fixtures
 
 import models._
 import org.joda.time.{DateTime, DateTimeZone}
+import org.scalatestplus.mockito.MockitoSugar
 import play.api.libs.json.{JsObject, JsValue, Json}
 
 import scala.collection.mutable.ListBuffer
-import org.scalatest.mock.MockitoSugar
 import uk.gov.hmrc.domain.Generator
 
 object Fixtures extends MockitoSugar {

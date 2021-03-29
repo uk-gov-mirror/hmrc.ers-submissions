@@ -34,7 +34,7 @@ import play.api.test.FakeRequest
 import repositories.{MetadataMongoRepository, Repositories}
 import services.audit.AuditEvents
 import uk.gov.hmrc.http.{HeaderCarrier, HttpResponse}
-import uk.gov.hmrc.play.test.{UnitSpec, WithFakeApplication}
+import uk.gov.hmrc.play.test.UnitSpec
 import utils.LoggingAndRexceptions.{ADRExceptionEmitter, ErsLoggingAndAuditing}
 import utils.{ADRSubmission, SubmissionCommon}
 

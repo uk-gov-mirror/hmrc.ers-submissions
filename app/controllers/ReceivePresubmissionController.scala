@@ -27,7 +27,7 @@ import controllers.auth.{AuthAction, AuthorisedAction}
 import metrics.Metrics
 import models.{SchemeData, SubmissionsSchemeData}
 import play.api.Logger
-import play.api.libs.json.{JsArray, JsObject, JsValue, Json}
+import play.api.libs.json.{JsObject, JsValue, Json}
 import play.api.mvc.{Action, ControllerComponents, PlayBodyParsers, Request, Result}
 import services.{FileDownloadService, PresubmissionService, ValidationService}
 import services.audit.AuditEvents

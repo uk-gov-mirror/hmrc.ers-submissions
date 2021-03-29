@@ -19,7 +19,6 @@ package services
 import fixtures.Fixtures
 import fixtures.Fixtures.schemeData
 import models.{ErsMetaData, SchemeInfo}
-import org.apache.commons.lang3.exception.ExceptionUtils
 import org.joda.time.{DateTime, DateTimeZone}
 import org.mockito.ArgumentMatchers.any
 import org.mockito.Mockito.{reset, verify}
@@ -30,11 +29,7 @@ import org.scalatestplus.play.guice.GuiceOneAppPerSuite
 import play.api.test.FakeRequest
 import services.audit.{AuditEvents, AuditService}
 import uk.gov.hmrc.http.HeaderCarrier
-import uk.gov.hmrc.play.audit.http.config.{AuditingConfig, BaseUri, Consumer}
 import uk.gov.hmrc.play.audit.http.connector.AuditConnector
-import uk.gov.hmrc.play.audit.model.DataEvent
-
-import scala.collection.mutable.ListBuffer
 
 class AuditEventsTest
   extends WordSpec with Matchers with MockitoSugar with GuiceOneAppPerSuite with BeforeAndAfterEach {
